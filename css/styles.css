@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --dark-gray: #1a1a1d;
+    --medium-gray: #4e4e50;
+    --light-gray: #c9c9c9;
+    --dark-red: #6f2232;
+    --dark-pink: #950740;
+    --medium-pink: #c30737;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, button, select, input {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+}
+
+body {
+    background-color: var(--dark-gray);
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--light-gray);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.title {
+    margin: 0 0 30px;
+    color: var(--dark-pink);
+}
+
+select {
+    border-radius: 10px;
+    height: 35px;
+    padding: 0 5px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    width: 100px;
+}
+
+select:focus {
+    box-shadow: 0 0 5px var(--medium-pink);
+    outline: none;
+}
+
+.input-fromBase {
+    margin-bottom: 15px;
+}
+
+.result-toBase {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#input {
+    height: 35px;
+    border-radius: 10px;
+    width: 300px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#input:focus {
+    box-shadow: 0 0 5px var(--medium-pink);
+    outline: none;
+}
+
+.error {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--dark-pink);
+}
+
+#result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 300px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.buttons button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--dark-pink);
+    border: none;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#btn-convert:hover {
+    background-color: var(--medium-pink);
+}
+
+#btn-reset {
+    background-color: white;
+    color: var(--dark-pink);
+    border: 2px solid var(--dark-pink);
+    margin-right: 10px;
+}
+
+#btn-reset:hover {
+    border-color: var(--medium-pink);
+    color: var(--medium-pink);
+}

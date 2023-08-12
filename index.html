@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <h1 class="title">Conversor de Bases</h1>
+
+            <div class="input-fromBase">
+                <!-- deixar dinamico com valores numericos (js) -->
+                <select name="fromBase" id="fromBase">
+                    <option value="">Da base:</option>
+                    <option value="1">1</option>
+                    <option value="2">2 (Bin)</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8 (Oct)</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (Dec)</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16 (Hex)</option>
+                </select>
+                <input type="text" name="input" id="input">
+                <div class="error" id="error"></div>
+                <div class="error" id="errorSelect"></div>
+            </div>
+
+            <div class="result-toBase">
+                <select name="toBase" id="toBase">
+                    <option value="">Para base:</option>
+                    <option value="1">1</option>
+                    <option value="2">2 (Bin)</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8 (Oct)</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (Dec)</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16 (Hex)</option>
+                </select>
+                <div id="result"></div>
+            </div>
+            <div class="error" id="errorSelect"></div>
+
+            <div class="buttons">
+                <button type="reset" id="btn-reset">Limpar</button>
+                <button type="submit" id="btn-convert">Converter</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
